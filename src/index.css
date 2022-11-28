@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url(assets/fonts/BebasNeue-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --secondary-font: 'BebasNeue';
+  --primary-font: 'Inter', sans-serif;
+  --primary-color: rgba(0, 0, 0, 0.974);
+  --secondary-color: ;
+  --white: #fff;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+.heading-primary {
+  font-size: 4rem;
+  font-family: var(--secondary-font);
+  margin-bottom: 2rem;
+}

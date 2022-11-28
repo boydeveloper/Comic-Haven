@@ -1,0 +1,19 @@
+.section-publishers {
+  padding: 4rem 0;
+}
+
+.publishers {
+  padding: 2rem 0;
+  background-color: #fff;
+}
+
+.publishers__logos {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.publishers__logos img {
+  height: 7rem;
+  width: 100%;
+}
