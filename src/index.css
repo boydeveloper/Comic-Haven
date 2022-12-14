@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 :root {
-  --secondary-font: 'BebasNeue';
+  --secondary-font: 'BebasNeue', sans-serif;
   --primary-font: 'Inter', sans-serif;
   --primary-color: #708d81;
   --white: #fff;
@@ -19,6 +19,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 body {
   font-family: var(--secondary-font);
   overflow-x: hidden;
@@ -38,7 +39,7 @@ body::-webkit-scrollbar-thumb {
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
 }
 .heading-primary {
   font-size: 4rem;
