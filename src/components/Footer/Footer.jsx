@@ -7,7 +7,6 @@ function Footer() {
           <span className="footer__copyright">
             © Darkrr.comics.com. All Rights Reserved.
           </span>
-
           <div className="footer__socials">fuck shit</div>
         </div>
       </div>

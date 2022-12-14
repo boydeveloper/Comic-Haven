@@ -1,0 +1,28 @@
+.section-quotes {
+  margin: 4rem 0;
+}
+
+.Quotes {
+  display: flex;
+  background-color: var(--primary-color);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  border: 0.3rem solid #fff;
+  padding: 8rem 1rem;
+}
+.Quotes > h3 {
+  font-weight: bolder;
+  font-size: 3rem;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.Quotes > img {
+  aspect-ratio: 6/2;
+  object-fit: contain;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  mix-blend-mode: color-burn;
+}

@@ -10,19 +10,30 @@
 :root {
   --secondary-font: 'BebasNeue';
   --primary-font: 'Inter', sans-serif;
-  --primary-color: rgba(0, 0, 0, 0.974);
-  --secondary-color: ;
+  --primary-color: #708d81;
   --white: #fff;
 }
+
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
+  overflow-x: hidden;
   font-weight: 400;
   font-size: 1.6rem;
   color: var(--white);
+  background-color: #010a12;
+}
+body::-webkit-scrollbar {
+  background-color: transparent;
   background-color: var(--primary-color);
+}
+body::-webkit-scrollbar-thumb {
+  height: 1.8rem;
+  background-color: #010a12;
 }
 .container {
   max-width: 120rem;
@@ -33,4 +44,9 @@ body {
   font-size: 4rem;
   font-family: var(--secondary-font);
   margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+.product__overview {
+}
+.product__overview--left {
 }

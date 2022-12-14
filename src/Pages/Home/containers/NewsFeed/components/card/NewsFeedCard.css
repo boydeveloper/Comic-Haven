@@ -1,0 +1,16 @@
+.NewsFeed-textbox > span {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+}
+.readMore:link,
+.readMore:visited {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.readMore:hover,
+.readMore:active {
+  color: #fb2136;
+  transition: color 0.2s;
+}

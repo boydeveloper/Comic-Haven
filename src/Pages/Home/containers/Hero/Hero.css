@@ -1,0 +1,77 @@
+.section-hero {
+  min-height: 70rem;
+}
+.hero {
+  padding: 2.5rem 0 15rem 0;
+  margin-bottom: 5rem;
+}
+
+.hero__overview {
+  gap: 3.5rem;
+  text-align: center;
+  padding-bottom: 5rem;
+  grid-template-columns: 1fr 1fr;
+  font-family: var(--secondary-font);
+}
+
+.hero__overview--left {
+  height: 100%;
+  padding-top: 4rem;
+  overflow: hidden;
+}
+.hero-heading {
+  font-size: 5rem;
+
+  font-weight: 900;
+  color: var(--primary-color);
+}
+.hero__overview--left > Link {
+  color: #fff;
+}
+.hero-summary {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: bolder;
+
+  line-height: 2.9rem;
+}
+.hero-btn:link,
+.hero-btn:visited {
+  color: #fff;
+  text-decoration: none;
+  border: 0.2rem solid var(--primary-color);
+  display: inline-block;
+  background: transparent;
+  padding: 1rem 1.5rem;
+}
+.hero-btn:hover {
+  background: var(--primary-color);
+}
+.hero__overview--right {
+  position: relative;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.hero__overview--right > img {
+  width: 100%;
+  top: 2rem;
+  height: 40rem;
+  object-fit: contain;
+  left: 0;
+  position: absolute;
+}
+
+.hero__overview--right > img:nth-child(1) {
+  left: -5rem;
+  transform: rotate(-35deg);
+  z-index: 5;
+}
+
+.hero__overview--right > img:nth-child(2) {
+  z-index: 4;
+}
+.hero__overview--right > img:nth-child(3) {
+  left: 5rem;
+  transform: rotate(35deg);
+  z-index: 3;
+}

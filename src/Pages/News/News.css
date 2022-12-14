@@ -1,0 +1,14 @@
+.News {
+  padding: 2rem;
+  min-height: 100vh;
+  max-width: 120rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.News > img {
+  width: 1005;
+}
+.News > p {
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+}

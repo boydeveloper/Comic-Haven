@@ -1,3 +1,4 @@
-export { default as Home } from '../Factors/Home/Route/Home';
-export { default as Product } from './ProductPage';
-export { default as Error } from './ErrorPage';
+export { default as Home } from './Home/Home';
+export { default as Product } from './Product/Product';
+export { default as Checkout } from './Checkout/Checkout';
+export { default as News } from './News/News';

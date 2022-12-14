@@ -1,0 +1,85 @@
+.productSkel-left {
+  padding: 2rem 2rem 2rem 6rem;
+  width: 40%;
+}
+
+.productSkel-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+}
+.productSkel-right {
+  width: 60%;
+  padding: 4rem 2rem 4rem 4rem;
+  border-left: 0.2rem solid var(--white);
+}
+.productSkel-textbox {
+}
+.productSkel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.productSkel-header > h1 {
+  display: block;
+  height: 4rem;
+  width: 100%;
+  max-width: 20rem;
+  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+}
+.productSkel-header > p {
+  display: block;
+  height: 2rem;
+  width: 100%;
+  max-width: 4rem;
+  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+}
+
+.p1,
+.p2,
+.p3,
+.p4 {
+  width: 100%;
+  height: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+}
+.p3 {
+  width: 97%;
+}
+.p4 {
+  width: 95%;
+}
+.skel-cta {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.skel-btn {
+  flex: 1;
+  display: block;
+  border: 0.2rem solid #fff;
+  height: 4.5rem;
+  width: 90%;
+  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+}
+.like-skel {
+  display: block;
+  border: 0.2rem solid #fff;
+  height: 4.5rem;
+  width: 10%;
+  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+}
+@keyframes skelentonContentAnimation {
+  0% {
+    background-color: rgb(68, 65, 65);
+  }
+
+  100% {
+    backgroung-color: #222324;
+  }
+}

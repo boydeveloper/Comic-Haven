@@ -1,0 +1,55 @@
+.News-skelenton {
+  border: 0.1rem solid #fff;
+  max-width: 60rem;
+}
+
+.img-skelenton {
+  padding: 1.5rem;
+  height: 40rem;
+  width: 100%;
+  animation: skelentonAnimation 1s linear infinite alternate;
+  border-bottom: solid 0.1rem var(--white);
+}
+.skel-textbox {
+  padding: 1.5rem;
+}
+.skel-textbox > h1 {
+  height: 2rem;
+  width: 40%;
+  display: block;
+  animation: skelentonTextAnimation 1.5s linear infinite alternate;
+}
+.skel-textbox > p {
+  height: 1.3rem;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+  animation: skelentonTextAnimation 1.5s linear infinite alternate;
+}
+.skel-textbox > span {
+  height: 1.5rem;
+  width: 4rem;
+  display: block;
+  animation: skelentonTextAnimation 1.5s linear infinite alternate;
+}
+
+@keyframes skelentonAnimation {
+  0% {
+    background-color: #010a12;
+  }
+  50% {
+    background-color: #01080d;
+  }
+  100% {
+    backgroung-color: #999;
+  }
+}
+
+@keyframes skelentonTextAnimation {
+  0% {
+    background-color: #444;
+  }
+  100% {
+    backgroung-color: #888;
+  }
+}

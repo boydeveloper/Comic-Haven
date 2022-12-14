@@ -1,0 +1,51 @@
+.comic-skelenton {
+  width: 100%;
+  background-color: transparent;
+  opacity: 0.7;
+  min-height: 48rem;
+  border: 0.2rem solid #fff;
+}
+.img-box-conc {
+  padding: 1.5rem;
+  border-bottom: 0.2rem solid #fff;
+}
+.img-conc {
+  display: block;
+  padding: 1.2rem;
+  height: 40rem;
+  width: 100%;
+  animation: skelentonTextAnimation 1s linear infinite alternate;
+}
+.text-box > p {
+  height: 2rem;
+  width: 60%;
+  display: block;
+  animation: skelentonTextAnimation 1.5s linear infinite alternate;
+}
+
+@keyframes skel-loading {
+  0% {
+    background-color: #222;
+  }
+  100% {
+    background-color: #061019;
+  }
+}
+@keyframes skelentonContentAnimation {
+  0% {
+    background-color: #032644;
+  }
+
+  100% {
+    backgroung-color: #222324;
+  }
+}
+@keyframes skelentonTextAnimation {
+  0% {
+    background-color: rgb(68, 65, 65);
+  }
+
+  100% {
+    backgroung-color: #222324;
+  }
+}

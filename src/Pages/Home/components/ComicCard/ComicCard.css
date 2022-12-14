@@ -1,0 +1,43 @@
+.comic-box {
+  border: 0.2rem solid var(--white);
+  position: relative;
+  min-height: 48rem;
+}
+.img-box {
+  padding: 1.5rem;
+  border-bottom: 0.1rem solid var(--white);
+}
+.love-icon {
+  position: absolute;
+  right: 0;
+  top: 0rem;
+  cursor: pointer;
+}
+.img-box > img {
+  height: 40rem;
+  width: 100%;
+}
+.text-box {
+  padding: 1rem 1.5rem;
+}
+.text-box-header {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-box a:link,
+.text-box a:visited {
+  font-size: 2rem;
+  color: var(--white);
+  font-family: var(--secondary-font);
+}
+.text-box a:active,
+.text-box a:hover {
+  color: var(--primary-color);
+  transition: color 0.2s;
+}
+.price {
+  font-size: 2rem;
+  font-family: var(--secondary-font);
+}

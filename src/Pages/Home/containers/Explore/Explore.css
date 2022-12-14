@@ -1,0 +1,25 @@
+.section-explore {
+  margin: 5rem 0;
+  padding: 5rem 0;
+}
+.Explore__boxes {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2.4rem;
+  grid-auto-columns: 29%;
+  overflow-y: auto;
+}
+.Explore__boxes::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 960px) {
+  .Explore__boxes {
+    gap: 2rem;
+    grid-auto-columns: 43%;
+  }
+}
+@media (max-width: 593px) {
+  .Explore__boxes {
+    grid-auto-columns: 87%;
+  }
+}

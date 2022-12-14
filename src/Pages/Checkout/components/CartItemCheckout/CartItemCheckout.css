@@ -1,0 +1,27 @@
+.checkout-item {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  padding: 2rem 0;
+  border-bottom: 0.2rem solid #fff;
+}
+.checkout-item > img {
+  height: 10rem;
+  min-width: 7rem;
+}
+.tag {
+  position: absolute;
+  height: 2.4rem;
+  width: 2.4rem;
+  display: flex;
+  left: 5rem;
+  top: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #010a12;
+}
+.checkout-item p:nth-child(2) {
+  margin-right: auto;
+  font-size: 1.8rem;
+}

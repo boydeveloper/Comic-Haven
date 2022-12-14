@@ -1,0 +1,98 @@
+.Cart-Navigation {
+  height: 100vh;
+  background-color: #010a12;
+  width: 40%;
+  min-width: 29rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 7;
+  overflow-y: scroll;
+  border: 0.2rem solid var(--white);
+  transform: translateX(100%);
+  transition: 0.3s transform;
+}
+
+.Cart-Navigation::-webkit-scrollbar {
+  display: none;
+}
+.open .Cart-Navigation {
+  transform: translateX(0%);
+}
+.subtotal {
+  margin-bottom: 2.5rem;
+}
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.2rem solid var(--white);
+  border-bottom: 0.2rem solid var(--white);
+  padding: 0.4rem 1.4rem;
+}
+.cart-heading {
+  font-size: 2rem;
+}
+.close-btn {
+  background: none;
+  display: inline-block;
+  border: none;
+}
+.cart-Navigation-cta {
+  padding: 2rem;
+}
+.subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Navigation-btns {
+  display: flex;
+  flex-direction: column;
+}
+.Navigation-btns button:first-child {
+  background-color: var(--primary-color);
+  padding: 1.2rem 2rem;
+  font-family: inherit;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.Navigation-btns button:first-child:hover {
+  background: #9fd6bf;
+}
+.Navigation-btns button:last-child {
+  background-color: var(--primary-color);
+  padding: 1.2rem 2rem;
+  font-family: inherit;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 2rem;
+  border: 0.2rem solid var(--white);
+  background-color: transparent;
+}
+.empty-cart {
+  padding: 2rem 1.3rem;
+  text-align: center;
+  font-size: 2.6rem;
+}
+.empty-cart > P {
+  margin-top: 1.6rem;
+}
+.explore-btn {
+  color: #fff;
+  text-decoration: none;
+  border: 0.2rem solid var(--primary-color);
+  display: inline-block;
+  background: transparent;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 1rem 1.5rem;
+  transition: background 0.1s;
+}
+.explore-btn:hover {
+  color: #010a12;
+  background: var(--primary-color);
+}
