@@ -1,7 +1,7 @@
 import './Product.css';
 import { useParams } from 'react-router-dom';
 import ProductContainer from './Containers/ProductContainer';
-import LikeIcon from '../../assets/icons/Like.svg';
+import LikeIcon from '../../assets/icons/like.svg';
 import useFetchComic from '../../hooks/useFetchComic';
 import { useAppContext } from '../../context/AppContex';
 import { noConentText, splitText } from './utils/utils';
