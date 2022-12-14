@@ -3,7 +3,7 @@ import { Home, Product, Checkout, News } from '../Pages/index';
 import Navbar from '../components/Navigation/Route/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import { Toaster } from 'react-hot-toast';
-
+import '../index.css';
 function RouterLinks() {
   return (
     <Router>
