@@ -28,6 +28,7 @@
 .checkout__overview--right {
   background-color: #384741;
   padding: 4rem 2rem;
+  grid-row: 1;
   height: 100%;
   overflow-y: scroll;
 }
@@ -90,7 +91,6 @@
 }
 .checkout-form input:focus {
   outline: none;
-  /* border: none; */
   box-shadow: 0 0 0 0.4rem #708d81;
 }
 #CVC {
@@ -124,4 +124,34 @@
 }
 .pay-btn:active {
   background-color: #b8fbe0;
+}
+@media (max-width: 960px) {
+  .checkout__overview {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 593px) {
+  .checkout-form {
+    font-size: 1.2rem;
+  }
+
+  .input-groups {
+    flex-direction: column;
+    width: 100%;
+  }
+  .input-groups .input-group:first-child {
+    width: 100%;
+  }
+  .input-groups .input-group:nth-child(2) {
+    width: 100%;
+  }
+  .input-group {
+    width: 100%;
+  }
+  .checkout-item p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+  .price {
+    font-size: 1.6rem;
+  }
 }

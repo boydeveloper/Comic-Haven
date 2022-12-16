@@ -3,17 +3,33 @@
 }
 
 .publishers {
-  padding: 2rem 0;
+  padding: 4rem 0;
   background-color: #fff;
 }
 
 .publishers__logos {
   display: flex;
+  gap: 2rem;
   justify-content: space-between;
-
   align-items: center;
 }
 .publishers__logos img {
   height: 7rem;
   width: 100%;
+}
+@media (max-width: 960px) {
+  .publishers {
+    padding: 1rem 0;
+  }
+  .publishers__logos {
+    gap: 1rem;
+  }
+  .publishers__logos img {
+    object-fit: contain;
+  }
+}
+@media (max-width: 593px) {
+  .publishers {
+    padding: 0;
+  }
 }

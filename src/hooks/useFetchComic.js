@@ -11,6 +11,7 @@ function useFetchComic(path) {
           import.meta.env.VITE_PUBLIC_KEY
         }&hash=${import.meta.env.VITE_MD5_HASH}`
       );
+
       const {
         data: { results },
       } = await res.json();

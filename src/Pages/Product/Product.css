@@ -31,8 +31,8 @@
   font-size: 2rem;
 }
 .product-desc {
-  font-family: var(--secondary-font);
   font-size: 1.8rem;
+  font-family: 'Cabinet Grotesk', sans-serif;
   line-height: 2.4rem;
   margin-bottom: 2rem;
 }
@@ -54,4 +54,38 @@
 .like-btn {
   background: transparent;
   border: 0.2rem solid var(--white);
+}
+@media (max-width: 960px) {
+  .Product {
+    flex-direction: column-reverse;
+    height: 100%;
+    gap: 2rem;
+  }
+  .product__overview--right {
+    flex: 1;
+  }
+  .product__overview--left {
+    padding: 2rem;
+    text-align: center;
+    border-left: 0;
+  }
+  .product__overview--right {
+    padding: 4rem 2rem;
+  }
+  .product__overview--left > img {
+    width: 100%;
+    height: 50rem;
+    object-fit: contain;
+  }
+}
+@media (max-width: 593px) {
+  .desc-heading {
+    font-size: 2.5rem;
+  }
+  .product-price {
+    font-size: 1.8rem;
+  }
+  .product-desc {
+    font-size: 1.8rem;
+  }
 }

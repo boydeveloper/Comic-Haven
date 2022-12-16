@@ -3,14 +3,11 @@
 }
 
 .Quotes {
-  display: flex;
   background-color: var(--primary-color);
-  align-items: center;
-  text-align: center;
-  justify-content: center;
   position: relative;
   border: 0.3rem solid #fff;
-  padding: 8rem 1rem;
+  height: 29rem;
+  padding: 1.5rem;
 }
 .Quotes > h3 {
   font-weight: bolder;
@@ -23,6 +20,25 @@
   object-fit: contain;
   position: absolute;
   width: 100%;
+  min-width: 60rem;
   z-index: 1;
   mix-blend-mode: color-burn;
+}
+@media (max-width: 960px) {
+  .Quotes {
+    align-items: flex-end;
+    padding: 7.2rem 1rem;
+  }
+  .Quotes > h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 593px) {
+  .Quotes > h3 {
+    font-size: 2rem;
+  }
+  .Quotes > img {
+    left: -2rem;
+    bottom: -2.5rem;
+  }
 }

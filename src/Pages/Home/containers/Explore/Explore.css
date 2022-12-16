@@ -20,6 +20,6 @@
 }
 @media (max-width: 593px) {
   .Explore__boxes {
-    grid-auto-columns: 87%;
+    grid-auto-columns: 89%;
   }
 }

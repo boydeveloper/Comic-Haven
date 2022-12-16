@@ -3,9 +3,9 @@ function CartItemCheckout({ items }) {
   return (
     <>
       {items.map((item) => {
-        const { prices, title, images, quantity } = item;
+        const { id, prices, title, images, quantity } = item;
         return (
-          <div className="checkout-item">
+          <div className="checkout-item" key={id}>
             <img src={`${images[0].path}.jpg`} alt={title} />
             <p>{item.title}</p>
             <div className="tag">{quantity}</div>

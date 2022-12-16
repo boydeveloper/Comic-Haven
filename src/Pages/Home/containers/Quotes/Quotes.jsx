@@ -7,7 +7,7 @@ function Quotes() {
         <div className="Quotes">
           <h3>
             "You Either Die A Hero Or Live Long Enough To See Yourself Become
-            The Villain."
+            The Villain." - The dark Knight
           </h3>
 
           <img src={QuoteImg} alt="batman" />

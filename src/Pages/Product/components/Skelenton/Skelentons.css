@@ -1,8 +1,7 @@
 .productSkel-left {
   padding: 2rem 2rem 2rem 6rem;
-  width: 40%;
+  width: 45%;
 }
-
 .productSkel-img {
   display: block;
   height: 100%;
@@ -10,7 +9,7 @@
   animation: skelentonContentAnimation 1s linear infinite forwards alternate;
 }
 .productSkel-right {
-  width: 60%;
+  width: 55%;
   padding: 4rem 2rem 4rem 4rem;
   border-left: 0.2rem solid var(--white);
 }
@@ -35,7 +34,6 @@
   max-width: 4rem;
   animation: skelentonContentAnimation 1s linear infinite forwards alternate;
 }
-
 .p1,
 .p2,
 .p3,
@@ -80,5 +78,22 @@
 
   100% {
     backgroung-color: #222324;
+  }
+}
+@media (max-width: 960px) {
+  .productSkel-left {
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+  }
+  .productSkel-right {
+    width: 100%;
+  }
+  .productSkel-img {
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    height: 50rem;
+    object-fit: contain;
   }
 }

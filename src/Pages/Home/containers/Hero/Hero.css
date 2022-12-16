@@ -1,5 +1,6 @@
 .section-hero {
-  min-height: 70rem;
+  min-height: 100vh;
+  height: 85rem;
 }
 .hero {
   padding: 2.5rem 0 15rem 0;
@@ -9,11 +10,13 @@
 .hero__overview {
   gap: 3.5rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
   padding-bottom: 5rem;
   grid-template-columns: 1fr 1fr;
   font-family: var(--secondary-font);
 }
-
 .hero__overview--left {
   height: 100%;
   padding-top: 4rem;
@@ -21,8 +24,8 @@
 }
 .hero-heading {
   font-size: 5rem;
-
   font-weight: 900;
+  margin-bottom: 1.8rem;
   color: var(--primary-color);
 }
 .hero__overview--left > Link {
@@ -32,25 +35,28 @@
   margin-bottom: 3rem;
   font-size: 2rem;
   font-weight: bolder;
-
+  font-family: 'Cabinet Grotesk', sans-serif;
   line-height: 2.9rem;
 }
-.hero-btn:link,
-.hero-btn:visited {
+.hero__overview--right {
+  position: relative;
+}
+.hero-btn {
   color: #fff;
   text-decoration: none;
   border: 0.2rem solid var(--primary-color);
   display: inline-block;
   background: transparent;
-  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 1.2rem 2.5rem;
+  transition: color 0.1s, background 0.1s;
 }
 .hero-btn:hover {
+  border: 0.2rem solid #fff;
+  color: #010a12;
   background: var(--primary-color);
-}
-.hero__overview--right {
-  position: relative;
-  width: 100%;
-  /* overflow: hidden; */
 }
 .hero__overview--right > img {
   width: 100%;
@@ -74,4 +80,35 @@
   left: 5rem;
   transform: rotate(35deg);
   z-index: 3;
+}
+@media (max-width: 960px) {
+  .hero-heading {
+    font-size: 4.8rem;
+  }
+  .hero-summary {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 593px) {
+  .hero-heading {
+    font-size: 3.5rem;
+  }
+  .hero-summary {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .section-hero {
+    height: 100%;
+  }
+  .hero__overview--right > img {
+    top: 0;
+    height: 22rem;
+    right: 0;
+  }
+}
+@media (max-width: 345px) {
+  .hero__overview--right > img {
+    top: 0;
+    height: 19rem;
+  }
 }

@@ -38,7 +38,14 @@ function CartContainer() {
             </div>
             <div className="Navigation-btns">
               <button onClick={() => navigate('/checkout')}>Checkout</button>
-              <button onClick={() => navigate('/')}>continue Shopping</button>
+              <button
+                onClick={() => {
+                  navigate('/');
+                  handleSmooth();
+                }}
+              >
+                continue Shopping
+              </button>
             </div>
           </div>
         </div>

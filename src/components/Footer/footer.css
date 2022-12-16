@@ -6,5 +6,22 @@
 .footer {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   justify-content: space-between;
+}
+.footer__socials {
+  display: flex;
+
+  align-items: center;
+  gap: 1.5rem;
+}
+.footer__socials > a:link,
+.footer__socials > a:visited {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+.footer__socials > a:hover {
+  color: var(--primary-color);
 }

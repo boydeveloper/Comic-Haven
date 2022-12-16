@@ -6,9 +6,9 @@ function NewsSkelenton({ skels }) {
         <div className="NewsFeed">
           <h1 className="heading-primary">News Feed</h1>
           <div className="NewsFeed__boxes">
-            {skels.map((skel) => {
+            {skels.map((skel, i) => {
               return (
-                <div className="News-skelenton">
+                <div className="News-skelenton" key={i}>
                   <div className="img-skelenton"></div>
                   <div className="skel-textbox">
                     <h1></h1>

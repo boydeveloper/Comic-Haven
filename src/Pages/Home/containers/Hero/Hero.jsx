@@ -1,9 +1,11 @@
+import './Hero.css';
+import { useAppContext } from '../../../../context/AppContex';
 import coverI from '../../../../assets/imgs/comiccover.webp';
 import coverII from '../../../../assets/imgs/superman.jpg';
 import coverIII from '../../../../assets/imgs/flash.jpg';
-import './Hero.css';
 
 function Hero() {
+  const { handleSmooth } = useAppContext();
   return (
     <div className="section-hero">
       <div className="container">
@@ -29,14 +31,14 @@ function Hero() {
                 create a welcoming and inclusive environment for all of our
                 customers.
               </p>
-              <a href="/" className="hero-btn">
+              <button onClick={() => handleSmooth()} className="hero-btn">
                 Explore
-              </a>
+              </button>
             </div>
             <div className="hero__overview--right">
-              <img src={coverIII} alt="" />
-              <img src={coverII} alt="" />
-              <img src={coverI} alt="" />
+              <img src={coverIII} alt="comic cover-01" />
+              <img src={coverII} alt="comic cover-02" />
+              <img src={coverI} alt="comic cover-03" />
             </div>
           </div>
         </div>

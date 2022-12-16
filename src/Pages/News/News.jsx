@@ -13,7 +13,7 @@ function News() {
   console.log(thumbnail);
 
   return (
-    <div className="News">
+    <div className="News" key={id}>
       <p>{description}</p>
       <img src={`${thumbnail.path}.jpg`} alt={title} />
     </div>

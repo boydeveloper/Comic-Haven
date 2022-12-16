@@ -32,6 +32,7 @@ function Product() {
               </span>
             </div>
             <p className="product-desc">
+              {shortDesc === '#N/A' && noConentText}
               {shortDesc === '' ? noConentText : shortDesc}
             </p>
             <div className="product-cta">
