@@ -63,12 +63,14 @@
   }
   .product__overview--right {
     flex: 1;
+    border-left: 0;
   }
+
   .product__overview--left {
     padding: 2rem;
     text-align: center;
-    border-left: 0;
   }
+
   .product__overview--right {
     padding: 4rem 2rem;
   }

@@ -14,7 +14,7 @@ function NewsFeed() {
     <div className="section-News">
       <div className="container">
         <div className="NewsFeed">
-          <h1 className="heading-primary">News Feed</h1>
+          <h1 className="heading-primary">Events</h1>
           <div className="NewsFeed__boxes">
             <NewsFeedCard News={News} />
           </div>
