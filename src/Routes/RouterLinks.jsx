@@ -7,11 +7,6 @@ import { Toaster } from 'react-hot-toast';
 function RouterLinks() {
   return (
     <Router>
-      <Toaster
-        toastOptions={{
-          className: 'toaster',
-        }}
-      />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,6 +15,11 @@ function RouterLinks() {
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
       <Footer />
+      <Toaster
+        toastOptions={{
+          className: 'toaster',
+        }}
+      />
     </Router>
   );
 }
