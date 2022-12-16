@@ -13,25 +13,17 @@ export const ContextApp = ({ children }) => {
   };
 
   const [num, setNum] = useState(1);
-  const [cartItems, setCartItems] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
-  const [totalQuantities, setTotalQuantities] = useState(0);
+  const [cartItems, setCartItems] = useState(getStorageLocal('cartItems'));
+  const [totalPrice, setTotalPrice] = useState(getStorageLocal('totalPrice'));
+  const [totalQuantities, setTotalQuantities] = useState(
+    getStorageLocal('totalQuantities')
+  );
 
-  // const [num, setNum] = useState(1);
-  // const [cartItems, setCartItems] = useState(getStorageLocal('cartItems'));
-  // const [totalPrice, setTotalPrice] = useState(getStorageLocal('totalPrice'));
-  // const [totalQuantities, setTotalQuantities] = useState(
-  //   getStorageLocal('totalQuantities')
-  // );
-  // console.log(totalQuantities);
-  // console.log(totalPrice);
-  // console.log(cartItems);
-
-  // useEffect(() => {
-  //   localStorage.setItem('totalPrice', JSON.stringify(totalPrice));
-  //   localStorage.setItem('cartItems', JSON.stringify(cartItems));
-  //   localStorage.setItem('totalQuantities', JSON.stringify(totalQuantities));
-  // }, [totalPrice, cartItems, totalQuantities]);
+  useEffect(() => {
+    localStorage.setItem('totalPrice', JSON.stringify(totalPrice));
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    localStorage.setItem('totalQuantities', JSON.stringify(totalQuantities));
+  }, [totalPrice, cartItems, totalQuantities]);
   const exploreSection = useRef();
   const handleSmooth = () => {
     exploreSection.current.scrollIntoView({ behavior: 'smooth' });
