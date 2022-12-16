@@ -19,7 +19,7 @@ function NewsFeedCard({ News }) {
             <div className="NewsFeed-textbox">
               <span>{title}</span>
               <p>{shortDescription} ......</p>
-              <Link to={`news/${id}`} className="readMore">
+              <Link to={`events/${id}`} className="readMore">
                 Read more
               </Link>
             </div>

@@ -3,10 +3,11 @@
   min-height: 100vh;
   max-width: 120rem;
   margin: 0 auto;
+  width: 100%;
   text-align: center;
 }
 .News > img {
-  width: 1005;
+  width: 100%;
 }
 .News > p {
   font-size: 3.2rem;

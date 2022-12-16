@@ -1,16 +1,17 @@
 import './News.css';
 import { useParams } from 'react-router-dom';
 import useFetchComic from '../../hooks/useFetchComic';
+import EventContainer from './Containers/EventContainer';
+import EventSkelenton from './components/eventSkelenton';
 
 function News() {
   const { id } = useParams();
   const { pending, comics: news } = useFetchComic(`events/${id}`);
   if (pending) {
-    return <div>loadinggg</div>;
+    return <EventContainer children={<EventSkelenton />} />;
   }
-  console.log(news);
+
   const { thumbnail, title, description } = news[0];
-  console.log(thumbnail);
 
   return (
     <div className="News" key={id}>

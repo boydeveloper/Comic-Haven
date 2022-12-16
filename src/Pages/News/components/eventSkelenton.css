@@ -1,0 +1,21 @@
+.description {
+  width: 100%;
+  display: block;
+  border: 0.5rem solid green;
+}
+.description div {
+  width: 4rem;
+  height: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+}
+@keyframes skelentonContentAnimation {
+  0% {
+    background-color: rgb(68, 65, 65);
+  }
+
+  100% {
+    backgroung-color: #222324;
+  }
+}
