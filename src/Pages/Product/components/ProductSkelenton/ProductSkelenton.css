@@ -87,6 +87,7 @@
     padding: 2rem;
   }
   .productSkel-right {
+    border-left: 0;
     width: 100%;
   }
   .productSkel-img {
