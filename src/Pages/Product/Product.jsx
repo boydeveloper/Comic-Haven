@@ -4,7 +4,7 @@ import ProductContainer from './Containers/ProductContainer';
 import LikeIcon from '../../assets/icons/like.svg';
 import useFetchComic from '../../hooks/useFetchComic';
 import { useAppContext } from '../../context/AppContex';
-import { noConentText, splitText } from './Utils/utils';
+import { noConentText, splitText } from './Utils/productUtils';
 import ProductSkelenton from './components/ProductSkelenton/ProductSkelenton';
 function Product() {
   const { id } = useParams();
