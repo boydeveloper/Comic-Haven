@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import useFetchComic from '../../hooks/useFetchComic';
 import EventContainer from './Containers/EventContainer';
-import EventSkelenton from './components/eventSkelenton';
+import EventSkelenton from './components/EventSkelenton';
 import './Event.css';
 
 function Event() {
