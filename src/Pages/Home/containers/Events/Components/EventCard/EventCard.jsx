@@ -1,6 +1,6 @@
+import './EventCard.css';
 import { Link } from 'react-router-dom';
-import './NewsFeedCard.css';
-function NewsFeedCard({ News }) {
+function EventCard({ News }) {
   return (
     <>
       {News.map((feed) => {
@@ -30,4 +30,4 @@ function NewsFeedCard({ News }) {
   );
 }
 
-export default NewsFeedCard;
+export default EventCard;

@@ -1,13 +1,13 @@
-import './NewsFeed.css';
-import NewsFeedCard from './components/card/NewsFeedCard';
+import './Events.css';
+import EventCard from './Components/EventCard/EventCard';
 import useFetchComic from '../../../../hooks/useFetchComic';
-import NewsSkelenton from './components/skelenton/NewsSkelenton';
-import { skelentons } from './utils/skelentonArray';
+import EventCardSkelenton from './Components/EventCardSkelenton/EventCardSkelenton';
+import { skelentons } from './Utils/utils';
 
-function NewsFeed() {
+function Events() {
   const { pending, comics: NewsFeed } = useFetchComic('events');
   if (pending) {
-    return <NewsSkelenton skels={skelentons} />;
+    return <EventCardSkelenton skels={skelentons} />;
   }
   const News = NewsFeed.slice(0, 6);
   return (
@@ -16,7 +16,7 @@ function NewsFeed() {
         <div className="NewsFeed">
           <h1 className="heading-primary">Events</h1>
           <div className="NewsFeed__boxes">
-            <NewsFeedCard News={News} />
+            <EventCard News={News} />
           </div>
         </div>
       </div>
@@ -24,4 +24,4 @@ function NewsFeed() {
   );
 }
 
-export default NewsFeed;
+export default Events;

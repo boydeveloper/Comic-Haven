@@ -6,12 +6,9 @@ import CloseIcon from '../../../../assets/icons/closeicon.svg';
 import BagIcon from '../../../../assets/icons/bag-outline.svg';
 
 function CartContainer() {
-  const { pending, cartItems, totalPrice, handleSmooth } = useAppContext();
+  const { cartItems, totalPrice, handleSmooth } = useAppContext();
   const navigate = useNavigate();
 
-  if (pending) {
-    return <div>Loading.....</div>;
-  }
   return (
     <div className="Cart-Navigation">
       <div className="cart-header">

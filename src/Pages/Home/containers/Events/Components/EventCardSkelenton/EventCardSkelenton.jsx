@@ -1,5 +1,5 @@
-import './NewsSkelenton.css';
-function NewsSkelenton({ skels }) {
+import './EventCardSkelenton.css';
+function EventCardSkelenton({ skels }) {
   return (
     <div className="section-News">
       <div className="container">
@@ -25,4 +25,4 @@ function NewsSkelenton({ skels }) {
   );
 }
 
-export default NewsSkelenton;
+export default EventCardSkelenton;

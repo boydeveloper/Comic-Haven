@@ -4,14 +4,14 @@ import ProductContainer from './Containers/ProductContainer';
 import LikeIcon from '../../assets/icons/like.svg';
 import useFetchComic from '../../hooks/useFetchComic';
 import { useAppContext } from '../../context/AppContex';
-import { noConentText, splitText } from './utils/utils';
-import Skelenton from './components/Skelenton/Skelenton';
+import { noConentText, splitText } from './Utils/utils';
+import ProductSkelenton from './components/ProductSkelenton/ProductSkelenton';
 function Product() {
   const { id } = useParams();
   const { atc } = useAppContext();
   const { pending, comics: comic } = useFetchComic(`comics/${id}`);
   if (pending) {
-    return <ProductContainer children={<Skelenton />} />;
+    return <ProductContainer children={<ProductSkelenton />} />;
   }
   const { images, title, prices, description } = comic[0];
   const shortDesc = splitText(description);

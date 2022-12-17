@@ -1,10 +1,10 @@
-import './News.css';
+import './Event.css';
 import { useParams } from 'react-router-dom';
 import useFetchComic from '../../hooks/useFetchComic';
 import EventContainer from './Containers/EventContainer';
 import EventSkelenton from './components/eventSkelenton';
 
-function News() {
+function Event() {
   const { id } = useParams();
   const { pending, comics: news } = useFetchComic(`events/${id}`);
   if (pending) {
@@ -21,4 +21,4 @@ function News() {
   );
 }
 
-export default News;
+export default Event;

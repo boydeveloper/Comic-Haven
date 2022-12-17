@@ -1,8 +1,8 @@
 import './Featured.css';
 import useFetchComic from '../../../../hooks/useFetchComic';
 import { ComicCard, SkelentonCard } from '../../components/Routes/index';
-import { skelentons } from '../Explore/utils/skelsArr';
-import FeaturedContainer from './containers/FeaturedContainer';
+import { skelentons } from '../Explore/Utils/utils';
+import FeaturedContainer from './Containers/FeaturedContainer';
 function Featured() {
   const { pending, comics } = useFetchComic('comics');
   if (pending) {

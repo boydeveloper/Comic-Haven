@@ -4,7 +4,7 @@ import {
   Featured,
   Publishers,
   Quotes,
-  NewsFeed,
+  Events,
 } from './containers/Routes/index';
 
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
         <Quotes />
         <Featured />
         <Publishers />
-        <NewsFeed />
+        <Events />
       </main>
     </>
   );

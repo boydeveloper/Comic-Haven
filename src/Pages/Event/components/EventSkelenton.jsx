@@ -1,4 +1,4 @@
-import './eventSkelenton.css';
+import './EventSkelenton.css';
 function EventSkelenton() {
   return (
     <>

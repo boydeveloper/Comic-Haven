@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Home, Product, Checkout, News } from '../Pages/index';
-import Navbar from '../components/Navigation/Route/Navbar/Navbar';
+import { Home, Product, Checkout, Event } from '../Pages/index';
+import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import { Toaster } from 'react-hot-toast';
 
@@ -18,11 +18,11 @@ function RouterLinks() {
           },
         }}
       />
-      <Navbar />
+      <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:product/:id" element={<Product />} />
-        <Route path="/events/:id" element={<News />} />
+        <Route path="/events/:id" element={<Event />} />
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
       <Footer />

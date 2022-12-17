@@ -2,7 +2,7 @@ import './Explore.css';
 import useFetchComic from '../../../../hooks/useFetchComic';
 import ExploreContainer from './Containers/ExploreContainer';
 import { ComicCard, SkelentonCard } from '../../components/Routes/index';
-import { skelentons } from './utils/skelsArr';
+import { skelentons } from './Utils/utils';
 function Explore() {
   const { pending, comics } = useFetchComic('comics');
   if (pending) {

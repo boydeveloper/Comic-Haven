@@ -1,0 +1,90 @@
+.header {
+  border-bottom: 0.2rem solid #fff;
+
+  width: 100%;
+  position: relative;
+}
+
+.Navigation {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.8rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.Navigation__brand {
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.Navigation__icons {
+  display: flex;
+  position: relative;
+  gap: 1.4rem;
+}
+.Navigation__icons button {
+  background: none;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--white);
+}
+.Navigation__icons span {
+  height: 2.6rem;
+  width: 2.6rem;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+.Navigation-overlay {
+  content: '';
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+  z-index: 6;
+  position: fixed;
+  display: none;
+  cursor: pointer;
+}
+.open .Navigation-overlay {
+  display: block;
+}
+.padlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cirlce {
+  content: '';
+  display: block;
+  border: 0.2rem solid var(--white);
+  height: 1.8rem;
+  width: 2.4rem;
+  border-bottom: 0;
+}
+.box {
+  display: block;
+  border: 0.4rem solid var(--white);
+  height: 2.9rem;
+  width: 3.6rem;
+}
+/* .toaster {
+  background-color: #010a12;
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  border: 0.2rem solid var(--white);
+} */

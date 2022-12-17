@@ -1,5 +1,5 @@
-import './Skelentons.css';
-function Skelenton() {
+import './ProductSkelenton.css';
+function ProductSkelenton() {
   return (
     <>
       <div className="productSkel-left">
@@ -26,4 +26,4 @@ function Skelenton() {
   );
 }
 
-export default Skelenton;
+export default ProductSkelenton;
