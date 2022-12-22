@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Error404 from '../../assets/imgs/404.svg';
+import './Notfound.css';
 
 function Notfound() {
   useEffect(() => {
