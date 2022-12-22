@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAppContext } from '../../context/AppContex';
 import appleLogo from '../../assets/icons/logo-apple.svg';
@@ -5,6 +6,9 @@ import arrowBack from '../../assets/icons/arr-back.svg';
 import CartItemCheckout from './components/CartItemCheckout/CartItemCheckout';
 import './Checkout.css';
 function Checkout() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const navigate = useNavigate();
   const { totalPrice, cartItems } = useAppContext();
 

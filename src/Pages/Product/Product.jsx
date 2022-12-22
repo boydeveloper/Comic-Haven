@@ -1,4 +1,5 @@
 import './Product.css';
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ProductContainer from './Containers/ProductContainer';
 import LikeIcon from '../../assets/icons/like.svg';
@@ -7,6 +8,9 @@ import { useAppContext } from '../../context/AppContex';
 import { noConentText, splitText } from './Utils/productUtils';
 import ProductSkelenton from './components/ProductSkelenton/ProductSkelenton';
 function Product() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const { id } = useParams();
   const { atc } = useAppContext();
   const { pending, comics: comic } = useFetchComic(`comics/${id}`);

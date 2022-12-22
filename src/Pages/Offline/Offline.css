@@ -1,0 +1,21 @@
+.offline {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  max-width: 90rem;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.offline > h1 {
+  padding: 0 0.8rem;
+  font-size: 4rem;
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+@media (max-width: 593px) {
+  .offline > h1 {
+    font-size: 3rem;
+  }
+}

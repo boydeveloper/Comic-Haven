@@ -1,9 +1,10 @@
 import RouterLinks from '../Routes/RouterLinks';
-
+import { Offline } from '../Pages/index';
+import { useEffect, useLayoutEffect } from 'react';
 function App() {
-  console.log(window.navigator.onLine);
+  const onLine = window.navigator.onLine;
 
-  return <RouterLinks />;
+  return onLine ? <RouterLinks /> : <Offline />;
 }
 
 export default App;
