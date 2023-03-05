@@ -10,9 +10,11 @@ function Explore() {
   }
   let exploreComics = [];
   exploreComics = exploreComics.concat(
-    comics.slice(9, 15),
-    comics.slice(16, 20)
+    comics.slice(7, 15),
+    comics.slice(16, 19)
   );
+  console.log('main', comics);
+  console.log('concat', exploreComics);
   return <ExploreContainer children={<ComicCard comics={exploreComics} />} />;
 }
 export default Explore;

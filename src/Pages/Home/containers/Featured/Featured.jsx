@@ -10,7 +10,7 @@ function Featured() {
       <FeaturedContainer children={<SkelentonCard skels={skelentons} />} />
     );
   }
-  const featuredComics = comics.slice(2, 8);
+  const featuredComics = comics.slice(0, 6);
   return <FeaturedContainer children={<ComicCard comics={featuredComics} />} />;
 }
 
