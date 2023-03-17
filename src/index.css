@@ -25,6 +25,7 @@ body {
   overflow-x: hidden;
   font-weight: 400;
   font-size: 1.6rem;
+  font-display: swap;
   color: var(--white);
   background-color: #010a12;
 }
