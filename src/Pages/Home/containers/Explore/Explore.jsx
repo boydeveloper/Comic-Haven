@@ -13,8 +13,6 @@ function Explore() {
     comics.slice(7, 15),
     comics.slice(16, 19)
   );
-  console.log('main', comics);
-  console.log('concat', exploreComics);
   return <ExploreContainer children={<ComicCard comics={exploreComics} />} />;
 }
 export default Explore;

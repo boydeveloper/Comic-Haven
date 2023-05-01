@@ -6,7 +6,15 @@
   display: block;
   height: 100%;
   width: 100%;
-  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+  background-position: 100% 0;
+  background-image: linear-gradient(
+    90deg,
+    #fff 0,
+    rgba(229 229 229/ 90%) 4rem,
+    #ccc 8rem
+  );
+  background-size: 300%;
+  animation: wavy-loading 1.5s linear infinite alternate;
 }
 .productSkel-right {
   width: 55%;
@@ -25,14 +33,30 @@
   height: 4rem;
   width: 100%;
   max-width: 20rem;
-  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+  background-position: 100% 0;
+  background-image: linear-gradient(
+    90deg,
+    #999 0,
+    rgba(229 229 229/ 90%) 4rem,
+    #ccc 8rem
+  );
+  background-size: 300%;
+  animation: wavy-loading 1.5s linear infinite alternate;
 }
 .productSkel-header > p {
   display: block;
   height: 2rem;
   width: 100%;
   max-width: 4rem;
-  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+  background-position: 100% 0;
+  background-image: linear-gradient(
+    90deg,
+    #999 0,
+    rgba(229 229 229/ 90%) 4rem,
+    #ccc 8rem
+  );
+  background-size: 300%;
+  animation: wavy-loading 1.5s linear infinite alternate;
 }
 .p1,
 .p2,
@@ -42,7 +66,15 @@
   height: 1.5rem;
   display: block;
   margin-bottom: 0.5rem;
-  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+  background-position: 100% 0;
+  background-image: linear-gradient(
+    90deg,
+    #999 0,
+    rgba(229 229 229/ 90%) 4rem,
+    #ccc 8rem
+  );
+  background-size: 300%;
+  animation: wavy-loading 1.5s linear infinite alternate;
 }
 .p3 {
   width: 97%;
@@ -62,22 +94,34 @@
   border: 0.2rem solid #fff;
   height: 4.5rem;
   width: 90%;
-  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+  background-position: 100% 0;
+  background-image: linear-gradient(
+    90deg,
+    #fff 0,
+    rgba(229 229 229/ 90%) 4rem,
+    #ccc 8rem
+  );
+  background-size: 300%;
+  animation: wavy-loading 1.5s linear infinite alternate;
 }
 .like-skel {
   display: block;
   border: 0.2rem solid #fff;
   height: 4.5rem;
   width: 10%;
-  animation: skelentonContentAnimation 1s linear infinite forwards alternate;
+  background-position: 100% 0;
+  background-image: linear-gradient(
+    90deg,
+    #fff 0,
+    rgba(229 229 229/ 90%) 4rem,
+    #ccc 8rem
+  );
+  background-size: 300%;
+  animation: wavy-loading 1.5s linear infinite alternate;
 }
-@keyframes skelentonContentAnimation {
-  0% {
-    background-color: rgb(68, 65, 65);
-  }
-
-  100% {
-    background-color: #222324;
+@keyframes wavy-loading {
+  to {
+    background-position: -100% 0%;
   }
 }
 @media (max-width: 960px) {

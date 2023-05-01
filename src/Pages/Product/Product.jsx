@@ -14,9 +14,9 @@ function Product() {
   const { id } = useParams();
   const { atc } = useAppContext();
   const { pending, comics: comic } = useFetchComic(`comics/${id}`);
-  if (pending) {
-    return <ProductContainer children={<ProductSkelenton />} />;
-  }
+  // if (pending) {
+  return <ProductContainer children={<ProductSkelenton />} />;
+  // }
   const { images, title, prices, description } = comic[0];
   const shortDesc = splitText(description);
 
