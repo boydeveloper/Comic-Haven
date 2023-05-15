@@ -17,6 +17,7 @@ export const ContextApp = ({ children }) => {
   const [totalPrice, setTotalPrice] = useState(getStorageLocal('totalPrice'));
   const [favoritesNum, setFavoritesNum] = useState(0);
   const [favourites, setFavorites] = useState([]);
+  const [fill, setFill] = useState(false);
   const [totalQuantities, setTotalQuantities] = useState(
     getStorageLocal('totalQuantities')
   );
@@ -27,14 +28,15 @@ export const ContextApp = ({ children }) => {
     localStorage.setItem('totalQuantities', JSON.stringify(totalQuantities));
   }, [totalPrice, cartItems, totalQuantities]);
   const exploreSection = useRef();
-  const handleSmooth = () => {
+  const handleSmooth = () =>
     exploreSection.current.scrollIntoView({ behavior: 'smooth' });
-  };
+
   const atc = (product, quantity) => {
     const checkProductInCart = cartItems.find(
       (comic) => comic.id === product.id
     );
     setTotalQuantities((prev) => prev + quantity);
+
     if (checkProductInCart) {
       const updatedCart = cartItems.map((item) =>
         item.id === product.id
@@ -57,14 +59,15 @@ export const ContextApp = ({ children }) => {
         if (prev < 1) return 1;
         return prev - quantity;
       });
+
       const updated = favourites.filter((i) => i !== product);
       setFavorites(updated);
     } else {
+      setFill(!fill);
       toast.success(`${product.title} added to favorites`);
       setFavorites([...favourites, product]);
       setFavoritesNum((prev) => prev + quantity);
     }
-    console.log(favourites);
   };
 
   const incQty = () => {
@@ -140,6 +143,7 @@ export const ContextApp = ({ children }) => {
         favoritesNum,
         atf,
         favourites,
+        fill,
       }}
     >
       {children}

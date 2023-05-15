@@ -12,7 +12,7 @@ function Product() {
     window.scrollTo(0, 0);
   });
   const { id } = useParams();
-  const { atc, atf } = useAppContext();
+  const { atc, atf, fill } = useAppContext();
   const { pending, comics: comic } = useFetchComic(`comics/${id}`);
   if (pending) {
     return <ProductContainer children={<ProductSkelenton />} />;
@@ -43,8 +43,13 @@ function Product() {
               <button className="atc-btn" onClick={() => atc(comic[0], 1)}>
                 Add to cart
               </button>
-              <button className="like-btn" onClick={() => atf(comic[0], 1)}>
-                <img src={LikeIcon} alt="like icon" />
+              <button
+                className={`${fill ? 'like-btn color' : 'like-btn'}`}
+                onClick={() => atf(comic[0], 1)}
+              >
+                <ion-icon
+                  name={`${fill ? 'heart' : 'heart-outline'}`}
+                ></ion-icon>
               </button>
             </div>
           </div>

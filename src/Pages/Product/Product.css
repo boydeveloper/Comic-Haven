@@ -53,7 +53,14 @@
 }
 .like-btn {
   background: transparent;
+  color: #fff;
+  /* color: var(--primary-color); */
+  font-size: 4.2rem;
+  cursor: pointer;
   border: 0.2rem solid var(--white);
+}
+.color {
+  color: var(--primary-color);
 }
 @media (max-width: 960px) {
   .Product {

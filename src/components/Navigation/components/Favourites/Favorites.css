@@ -1,0 +1,26 @@
+.favourite-item {
+  padding: 2rem;
+  border-bottom: 0.2rem solid var(--white);
+  display: flex;
+  gap: 2rem;
+}
+
+.favourite-img {
+  height: 10rem;
+  min-width: 7rem;
+}
+.favourite-item__details > p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.favourite-item__details > button {
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+.favourite-item__details > button > ion-icon {
+  color: #fff;
+  font-size: 2rem;
+  fill: var(--primary-color);
+}
