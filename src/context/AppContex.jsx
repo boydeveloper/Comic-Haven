@@ -59,11 +59,9 @@ export const ContextApp = ({ children }) => {
         if (prev < 1) return 1;
         return prev - quantity;
       });
-
       const updated = favourites.filter((i) => i !== product);
       setFavorites(updated);
     } else {
-      setFill(!fill);
       toast.success(`${product.title} added to favorites`);
       setFavorites([...favourites, product]);
       setFavoritesNum((prev) => prev + quantity);

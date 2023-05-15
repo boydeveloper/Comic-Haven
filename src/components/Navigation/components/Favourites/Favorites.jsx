@@ -5,10 +5,10 @@ function Favorites() {
   const { favourites } = useAppContext();
 
   return favourites.map((fav) => {
-    const { images, title } = fav;
+    const { id, images, title } = fav;
 
     return (
-      <div className="favourite-item">
+      <div className="favourite-item" key={id}>
         <img
           className="favourite-img"
           src={`${images[0].path}.jpg`}
@@ -17,7 +17,7 @@ function Favorites() {
         <div className="favourite-item__details">
           <p>{title}</p>
           <button>
-            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon name="heart"></ion-icon>
           </button>
         </div>
       </div>

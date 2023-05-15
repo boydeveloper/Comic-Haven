@@ -12,12 +12,12 @@ function Product() {
     window.scrollTo(0, 0);
   });
   const { id } = useParams();
-  const { atc, atf, fill } = useAppContext();
+  const { atc, atf } = useAppContext();
   const { pending, comics: comic } = useFetchComic(`comics/${id}`);
   if (pending) {
     return <ProductContainer children={<ProductSkelenton />} />;
   }
-  const { images, title, prices, description } = comic[0];
+  const { images, title, prices, description, fill } = comic[0];
   const shortDesc = splitText(description);
 
   return (

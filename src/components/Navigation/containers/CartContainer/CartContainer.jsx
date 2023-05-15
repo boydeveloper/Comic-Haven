@@ -7,7 +7,13 @@ import CloseIcon from '../../../../assets/icons/closeicon.svg';
 import BagIcon from '../../../../assets/icons/bag-outline.svg';
 
 function CartContainer({ favourites }) {
-  const { cartItems, totalPrice, handleSmooth } = useAppContext();
+  const {
+    cartItems,
+    totalPrice,
+    handleSmooth,
+    favourites: favoriteItems,
+  } = useAppContext();
+  console.log(favoriteItems.length === 0 && 'hi');
   const navigate = useNavigate();
 
   return (
@@ -22,6 +28,10 @@ function CartContainer({ favourites }) {
       </div>
       {favourites === true ? (
         <Favorites />
+      ) : favoriteItems.length === 0 ? (
+        <div>
+          <p>you have no favorites yet</p>
+        </div>
       ) : cartItems.length < 1 ? (
         <div className="empty-cart">
           <img src={BagIcon} alt="Bag icon" />

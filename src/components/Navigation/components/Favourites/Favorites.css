@@ -20,7 +20,7 @@
 }
 
 .favourite-item__details > button > ion-icon {
-  color: #fff;
+  color: var(--primary-color);
   font-size: 2rem;
   fill: var(--primary-color);
 }
