@@ -13,7 +13,6 @@ function CartContainer({ favourites }) {
     handleSmooth,
     favourites: favoriteItems,
   } = useAppContext();
-  console.log(favoriteItems.length === 0 && 'hi');
   const navigate = useNavigate();
 
   return (
