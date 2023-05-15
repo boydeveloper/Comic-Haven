@@ -1,6 +1,5 @@
 .header {
   border-bottom: 0.2rem solid #fff;
-
   width: 100%;
   position: relative;
 }
@@ -23,10 +22,10 @@
 
 .Navigation__icons {
   display: flex;
-  position: relative;
   gap: 1.4rem;
 }
 .Navigation__icons button {
+  position: relative;
   background: none;
   border: none;
   display: flex;
@@ -35,7 +34,8 @@
   font-size: 2rem;
   color: var(--white);
 }
-.Navigation__icons span {
+.favorite-count,
+.cart-count {
   height: 2.6rem;
   width: 2.6rem;
   right: 0;
@@ -46,6 +46,12 @@
   align-items: center;
   justify-content: center;
   background-color: var(--primary-color);
+}
+.favorite-count {
+}
+.cart-count {
+}
+.Navigation__icons span {
 }
 
 .Navigation-overlay {

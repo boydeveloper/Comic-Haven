@@ -15,6 +15,8 @@ export const ContextApp = ({ children }) => {
   const [num, setNum] = useState(1);
   const [cartItems, setCartItems] = useState(getStorageLocal('cartItems'));
   const [totalPrice, setTotalPrice] = useState(getStorageLocal('totalPrice'));
+  const [favoritesNum, setFavoritesNum] = useState(0);
+  const [favourites, setFavorites] = useState([]);
   const [totalQuantities, setTotalQuantities] = useState(
     getStorageLocal('totalQuantities')
   );
@@ -46,6 +48,23 @@ export const ContextApp = ({ children }) => {
       setTotalPrice((prev) => prev + product.prices[0].price);
     }
     toast.success(`${quantity} ${product.title} added to the cart`);
+  };
+
+  const atf = (product, quantity) => {
+    if (favourites.includes(product)) {
+      toast.success(`${product.title} removed from  favorites`);
+      setFavoritesNum((prev) => {
+        if (prev < 1) return 1;
+        return prev - quantity;
+      });
+      const updated = favourites.filter((i) => i !== product);
+      setFavorites(updated);
+    } else {
+      toast.success(`${product.title} added to favorites`);
+      setFavorites([...favourites, product]);
+      setFavoritesNum((prev) => prev + quantity);
+    }
+    console.log(favourites);
   };
 
   const incQty = () => {
@@ -83,6 +102,7 @@ export const ContextApp = ({ children }) => {
       }
     }
   };
+
   const clearAll = () => {
     setCartItems([]);
     setTotalPrice(0);
@@ -117,6 +137,9 @@ export const ContextApp = ({ children }) => {
         toggleCartComicQuantity,
         deleteComicItem,
         clearAll,
+        favoritesNum,
+        atf,
+        favourites,
       }}
     >
       {children}

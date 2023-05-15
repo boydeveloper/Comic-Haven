@@ -1,11 +1,12 @@
-import './CartContainer.css';
 import { useAppContext } from '../../../../context/AppContex';
+import Favorites from '../../components/Favourites/Favorites';
 import { useNavigate } from 'react-router-dom';
+import './CartContainer.css';
 import CartItems from '../../components/CartItems/CartItems';
 import CloseIcon from '../../../../assets/icons/closeicon.svg';
 import BagIcon from '../../../../assets/icons/bag-outline.svg';
 
-function CartContainer() {
+function CartContainer({ favourites }) {
   const { cartItems, totalPrice, handleSmooth } = useAppContext();
   const navigate = useNavigate();
 
@@ -15,14 +16,18 @@ function CartContainer() {
         <button className="close-btn">
           <img src={CloseIcon} alt="close icon" />
         </button>
-        <span className="cart-heading">Cart</span>
+        <span className="cart-heading">
+          {favourites ? 'Favorites' : 'Cart'}
+        </span>
       </div>
-      {cartItems.length < 1 ? (
+      {favourites === true ? (
+        <Favorites />
+      ) : cartItems.length < 1 ? (
         <div className="empty-cart">
           <img src={BagIcon} alt="Bag icon" />
           <p>
-            Your cart is currently empty. To make a purchase, please add items
-            to your cart.
+            Your cart is currently empty.To make a purchase, please add items to
+            your cart.
           </p>
         </div>
       ) : (
